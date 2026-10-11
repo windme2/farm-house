@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farm House is a cozy browser farming game. Grow crops, care for animals, craft goods, and expand your farm." />
+    <meta name="theme-color" content="#6fb84a" />
+    <meta name="color-scheme" content="light" />
+    <meta name="application-name" content="Farm House" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Farm House — Cozy Farming Game" />
+    <meta property="og:description" content="Grow crops, care for animals, craft goods, and expand your farm in your browser." />
+    <meta property="og:url" content="https://windme2.github.io/farm-house/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Farm House — Cozy Farming Game" />
+    <meta name="twitter:description" content="A cozy browser farming game about growing, crafting, and expanding your farm." />
+    <title>Farm House — Cozy Farming Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+
+    <div id="top">
+      <div id="lvl">
+        <div id="badge">1</div>
+        <div id="xpwrap">
+          <div id="xpbar">
+            <div id="xpfill"></div>
+            <div id="xptxt"></div>
+          </div>
+        </div>
+      </div>
+      <div id="res">
+        <button class="pill" id="snd" aria-label="Sound">🔊</button>
+        <div class="pill"><i>💰</i><span id="coins">0</span></div>
+        <div class="pill"><i>💎</i><span id="gems">0</span></div>
+      </div>
+    </div>
+
+    <canvas id="mini" width="240" height="120" aria-label="Farm map overview"></canvas>
+    <div id="zoom">
+      <button id="zin" aria-label="Zoom in">＋</button
+      ><button id="zout" aria-label="Zoom out">－</button
+      ><button id="home" aria-label="Back to the farm house">🏠</button>
+    </div>
+    <div id="seeds"></div>
+    <div id="dock">
+      <button class="big quest" id="questBtn">📜<small>QUESTS</small></button>
+      <button class="big barn" id="barnBtn">🏚️<small>BARN</small></button>
+      <button class="big" id="shopBtn">🔨<small>SHOP</small></button>
+    </div>
+
+    <div id="toast"></div>
+    <div id="modal" class="hidden">
+      <div class="card">
+        <button id="mx">✕</button>
+        <h2 id="mt"></h2>
+        <div id="mb"></div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
